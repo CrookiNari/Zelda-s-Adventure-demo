@@ -13,6 +13,16 @@ function game_manager:start_game(file_name)
     initial_game:initialize_new_savegame(game)
   end
   game:start()
+
+  function game:on_paused()
+    game:start_dialog("pause.save_question", function(answer)
+      if answer == 2 then
+        game:save()
+        end
+      sol.audio.play_sound("danger")
+      game:set_paused(false)
+    end)
+  end
 end
 
 return game_manager
