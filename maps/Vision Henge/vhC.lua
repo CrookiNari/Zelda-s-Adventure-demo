@@ -19,9 +19,9 @@ function lady:on_interaction()
 
 game:start_dialog ("sample_text", function(answer)
   if answer == 3 then -- Yes.
-  game:start_dialog("sample_text2")
+  game:start_dialog("sample_text.2")
   else 
-  game:start_dialog("sample_text3")
+  game:start_dialog("sample_text.3")
 end
 end)
 
