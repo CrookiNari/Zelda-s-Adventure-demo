@@ -399,14 +399,14 @@ Are you having a nice day?
 }
 
 dialog{
-  id = "sample_text2",
+  id = "sample_text.2",
   text = [[
 That's good!
 ]],
 }
 
 dialog{
-  id = "sample_text3",
+  id = "sample_text.3",
   text = [[
 Oh, pity.
 ]],
@@ -521,6 +521,15 @@ dialog{
   text = [[
 You won't do it? Please! I can't walk that far
 in my current state!
+]],
+}
+
+dialog{
+  id = "water",
+  text = [[
+Will you take some water?
+$?Yes
+$?No
 ]],
 }
 
